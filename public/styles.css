@@ -1,0 +1,263 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f9f4;
+    color: #333;
+}
+
+.header {
+    background-color: #285c3b;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #c9e6a9;
+}
+
+.hero {
+    background-color: #e1efd8;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero h1 {
+    color: #285c3b;
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 17px;
+}
+
+.hero-plant {
+    font-size: 100px;
+}
+
+.kicker {
+    color: #668b48;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    background-color: #39784c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #214b30;
+}
+
+.welcome {
+    text-align: center;
+    padding: 35px;
+}
+
+.section {
+    padding: 40px 9%;
+}
+
+.pale {
+    background-color: #edf3e8;
+}
+
+.heading {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.heading span {
+    color: #65934a;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.heading h2 {
+    color: #285c3b;
+    margin: 0;
+}
+
+.heading p {
+    color: #666;
+    margin-top: 5px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card, .product {
+    background-color: white;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #dce7d6;
+}
+
+.card h3, .product h3 {
+    color: #39784c;
+}
+
+.card p, .product p {
+    color: #666;
+}
+
+.icon {
+    font-size: 35px;
+}
+
+.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.four {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.note {
+    background-color: #e1efd8;
+    padding: 15px;
+    border-left: 4px solid #65934a;
+}
+
+.forest {
+    background-color: #285c3b;
+    color: white;
+    padding: 40px 9%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.forest h2 {
+    color: white;
+}
+
+.forest-icon {
+    font-size: 80px;
+}
+
+.chips span {
+    display: inline-block;
+    background-color: #477653;
+    padding: 8px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.account {
+    padding: 40px 9%;
+    background-color: #edf3e8;
+}
+
+.account-intro {
+    text-align: center;
+}
+
+.account h2 {
+    color: #285c3b;
+}
+
+.forms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formbox, .privatebox {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formbox input {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formbox label {
+    display: block;
+    margin: 10px 0;
+}
+
+.privatebox {
+    margin-top: 20px;
+}
+
+.secondary {
+    background-color: #6b914d;
+}
+
+.outline {
+    background-color: white;
+    color: #285c3b;
+    border: 1px solid #285c3b;
+}
+
+.status {
+    text-align: center;
+    color: #285c3b;
+}
+
+footer {
+    background-color: #285c3b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Para que se vea bien en celulares */
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-plant {
+        display: none;
+    }
+
+    .cards, .three, .four, .forms {
+        grid-template-columns: 1fr;
+    }
+
+    .forest {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
